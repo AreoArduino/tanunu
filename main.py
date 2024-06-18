@@ -3,13 +3,15 @@ import discord
 from discord.ext import commands
 from groq import Groq
 from keep_alive import keep_alive
+import os
+
 
 keep_alive()
 
 client = Groq(
     api_key="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")
 
-TOKEN = 'MTI1MjIyMDA3MzU5OTMwMzc0MA.GJduBb.5Urg1mXIbuQOqKVze1fpuECBTKAHBX8QLnAZOU'
+TOKEN = os.environ.get('token')
 
 intents = discord.Intents.default()
 intents.members = True
