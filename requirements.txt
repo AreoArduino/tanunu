@@ -1,0 +1,6 @@
+discord
+discord.ext
+groq
+random
+flask
+threading
