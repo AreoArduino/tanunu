@@ -263,6 +263,10 @@ async def on_message(message, ):
     if message.author == bot.user:
         return
 
+    elif (("shaadi" in message.content.lower()) and ("anonymous" in message.content.lower())):
+        await message.reply(content="Uss Behen ke lode se nhi karungi saadi.")
+        await bot.process_commands(message)
+    
     elif (c1 or c2 or c3 or c4 or c5):
         response = random.choice(flirty_responses)
         await message.reply(content="Hello," + response)
