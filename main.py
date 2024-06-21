@@ -260,6 +260,7 @@ async def on_message(message, ):
     c4 = ("flirt" in message.content.lower())
     c5 = ("tanu" in message.content.lower())
     c6=("aryan" in message.content.lower()) or("verit" in message.content.lower()) or("veritasium" in message.content.lower())
+    c7=("sindhu" in message.content.lower()) or("bacchi" in message.content.lower()) or("chotibacchi" in message.content.lower())
     if message.author == bot.user:
         return
 
@@ -267,9 +268,12 @@ async def on_message(message, ):
         await message.reply(content="Anyday with him! ❤️")
         await bot.process_commands(message)
 
+    elif (("shaadi" in message.content.lower()) and c7 ):
+        await message.reply(content=" HP❤️Sindhu. Shaadi mai kab bula rahe?")
+        await bot.process_commands(message)
     
     elif ("shaadi" in message.content.lower()):
-        await message.reply(content="Uss Behen ke lode se nhi karungi saadi.")
+        await message.reply(content="Uss Behen ke lode se nhi karungi saadi. Mujhse toh Verit karega ❤️")
         await bot.process_commands(message)
     
     elif (c1 or c2 or c3 or c4 or c5):
