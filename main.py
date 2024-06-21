@@ -268,7 +268,7 @@ async def on_message(message, ):
         await bot.process_commands(message)
 
     
-    elif (("shaadi" in message.content.lower()):
+    elif ("shaadi" in message.content.lower()):
         await message.reply(content="Uss Behen ke lode se nhi karungi saadi.")
         await bot.process_commands(message)
     
