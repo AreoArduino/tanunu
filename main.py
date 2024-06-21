@@ -259,11 +259,16 @@ async def on_message(message, ):
     c3 = message.content.lower() == "hey"
     c4 = ("flirt" in message.content.lower())
     c5 = ("tanu" in message.content.lower())
-
+    c6=("aryan" in message.content.lower()) or("verit" in message.content.lower()) or("veritasium" in message.content.lower())
     if message.author == bot.user:
         return
 
-    elif (("shaadi" in message.content.lower()) and ("anonymous" in message.content.lower())):
+    elif (("shaadi" in message.content.lower()) and c6 ):
+        await message.reply(content="Uss Behen ke lode se nhi karungi saadi.")
+        await bot.process_commands(message)
+
+    
+    elif (("shaadi" in message.content.lower()):
         await message.reply(content="Uss Behen ke lode se nhi karungi saadi.")
         await bot.process_commands(message)
     
