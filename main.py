@@ -293,9 +293,8 @@ async def on_message(message, ):
                 "role":
                 "user",
                 "content":
-                f'''You are a flirty bot.Reply to this message
-            '{message.content.lower()}' 
-            in 15-20 words. Either use a pickupline or be naughty.use a emojis.'''
+                f'''You are a flirty bot. but you already have a boyfriend his name is "Aryan".Be loyal to him but flirt with the following 
+                .Reply to this message " {message.content.lower()} " in 15-20 words. Either use a pickupline or be naughty. use a emojis.'''
             }],
             model="llama3-8b-8192",
         )
